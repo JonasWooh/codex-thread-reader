@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-thread-reader",
+  "version": "0.2.0",
+  "description": "Read local Codex conversation history by deeplink or thread ID without modifying Codex state.",
+  "author": {
+    "name": "Local utility"
+  },
+  "license": "MIT",
+  "keywords": ["codex", "threads", "deeplink", "history", "context"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Codex Thread Reader",
+        "shortDescription": "Read local Codex threads",
+        "longDescription": "Recover visible context from prior local Codex conversations using codex://threads/... deeplinks or thread IDs. The reader is local and read-only and does not expose hidden reasoning.",
+        "developerName": "Local utility",
+        "category": "Productivity",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": [
+          "Read this prior Codex thread and continue from its context: codex://threads/...",
+          "List my recent local Codex threads.",
+          "Search my local Codex threads for a topic."
+        ]
+      }
+    }
+  }
+}

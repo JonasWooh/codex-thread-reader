@@ -1,0 +1,20 @@
+{
+  "name": "codex-thread-reader",
+  "interface": {
+    "displayName": "Codex Thread Reader"
+  },
+  "plugins": [
+    {
+      "name": "codex-thread-reader",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
